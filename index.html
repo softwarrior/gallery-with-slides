@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="./index.css" rel="stylesheet"/> 
+    <script defer type="module" src="index.js"></script>
+    <title>Галерея со слайдами</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend class="legend">Выберете верстку:</legend>
+            <div class="div" style="display:block;">
+                <input class="input" type="radio" id="float" name="css" value="float" checked>
+                <label class="label" for="float">float.css</label>
+                <input class="input" type="radio" id="inline-block" name="css" value="inline-block">
+                <label class="label" for="inline-block">inline-block.css</label>
+                <input class="input" type="radio" id="flex" name="css" value="flex">
+                <label class="label" for="flex">flex.css</label>
+                <input class="input" type="radio" id="position" name="css" value="position">
+                <label class="label" for="flex">position.css</label>
+                <input class="input" type="radio" id="grid" name="css" value="grid">
+                <label class="label" for="flex">grid.css</label>
+            </div>
+            <div class="div">
+                <button class="button" type="submit">Использовать</button>
+                <pre id="log"></pre>
+            </div>
+        </fieldset>
+    </form>
+    <header class="gallery">
+        <div class="gallery__info">
+            Этот блок занимает 30%, тут расположен текст – описание картинки
+        </div>
+        <div class="gallery__main-slide">
+            красивый слайд в центе
+        </div>
+        <div class="gallery__slides">
+            <ul class="slides">
+                
+                <li class="slides__slide"></li>
+                <li class="slides__slide"></li>
+                <li class="slides__slide"></li>
+                <li class="slides__slide"></li>
+                <li class="slides__slide"></li>
+                <li class="slides__slide"></li>
+                <li class="slides__slide"></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
